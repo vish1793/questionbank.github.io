@@ -12,7 +12,7 @@ var config = {
 firebase.initializeApp(config);
 
 // Reference messages collection
-var messagesRef = firebase.database().ref('https://questionbank-5dcb3.firebaseio.com/messages');
+var messagesRef = firebase.database().ref();
 
 // Listen for form submit
 document.getElementById('contactForm').addEventListener('submit', submitForm);
