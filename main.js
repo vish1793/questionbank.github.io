@@ -6,13 +6,11 @@ var config = {
   projectId: "questionbank-5dcb3",
   storageBucket: "questionbank-5dcb3.appspot.com",
   messagingSenderId: "1053435421262",
-  appId: "1:1053435421262:web:97a713aef77ae3da30191f",
-  measurementId: "G-6HFQT5YGP3"
 };
 firebase.initializeApp(config);
 
 // Reference messages collection
-var messagesRef = firebase.database().ref();
+var messagesRef = firebase.database().ref('messages');
 
 // Listen for form submit
 document.getElementById('contactForm').addEventListener('submit', submitForm);
