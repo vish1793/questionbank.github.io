@@ -9,6 +9,7 @@ var config = {
   appId: "1:1053435421262:web:97a713aef77ae3da30191f",
   measurementId: "G-6HFQT5YGP3"
 };
+
 firebase.initializeApp(config);
 
 // Reference messages collection
