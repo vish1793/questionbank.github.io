@@ -12,7 +12,7 @@ var config = {
 firebase.initializeApp(config);
 
 // Reference messages collection
-const messagesRef = firebase.database().ref('messages');
+var messagesRef = firebase.database().ref('https://questionbank-5dcb3.firebaseio.com/messages');
 
 // Listen for form submit
 document.getElementById('contactForm').addEventListener('submit', submitForm);
@@ -54,7 +54,7 @@ function getInputVal(id){
 
 // Save message to firebase
 function saveMessage(subject, question, option1, option2, option3, option4, answer, weightage, timer){
-  const newMessageRef = messagesRef.push();
+  var newMessageRef = messagesRef.push();
   newMessageRef.set({
     subject: subject,
     question: question,
